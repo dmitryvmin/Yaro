@@ -1,0 +1,76 @@
+<!-- interact.html -->
+<div ng-controller="parallaxController" class="page-banner">
+    <div class="overlay"></div>
+        <div parallax-background parallax-ratio="0.5" class="photo oba-interact">
+             <h1>{{ 'HEADER_interact' | translate }}</h1>
+        </div>
+</div>
+
+<section class="interact-container">
+
+        <!-- Twitter feed ticker -->
+        <div ui-if="twitter-json-ready">
+
+            <div class="interact-tweets">
+                <inttweets inttweets="inttweets" id="twitter-widget"></inTweets>
+            </div>
+
+        </div>
+
+    <div class="interact-videos">
+        <div class="video">
+            <div class="video-container">
+                <youtube-video video-id="videos[0]" player-vars="playerVars"></youtube-video>
+            </div>
+            <div class="interact-video-info">
+                <p>{{ 'INTERACT_1' | translate }}</p>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-container">
+                <youtube-video video-id="videos[1]" player-vars="playerVars"></youtube-video>
+            </div>
+            <div class="interact-video-info">
+                <p>{{ 'INTERACT_2' | translate }}</p>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-container">
+                <youtube-video video-id="videos[2]" player-vars="playerVars"></youtube-video>
+            </div>
+            <div class="interact-video-info">
+                <p>{{ 'INTERACT_3' | translate }}</p>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-container">
+                <youtube-video video-id="videos[3]" player-vars="playerVars"></youtube-video>
+            </div>
+            <div class="interact-video-info">
+                <p>{{ 'INTERACT_4' | translate }}</p>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-container">
+                <youtube-video video-id="videos[4]" player-vars="playerVars"></youtube-video>
+            </div>
+            <div class="interact-video-info">
+                <p>{{ 'INTERACT_5' | translate }}</p>
+            </div>
+        </div>
+    <!--<div class="video">
+            <div class="video-container">
+                <video id="oba_video_5" class="video-js vjs-default-skin" controls="true">
+                    <source src="{{vidImg[4]}}" type='video/mp4' />
+                </video>
+            </div>
+            <div class="interact-video-info">
+                <p>GOAL: Obafemi Martins with a beautiful turn and finish | Seattle Sounders vs Houston Dynamo.</p>
+            </div>
+        </div>-->
+    </div>
+
+</section>
+
+
+
