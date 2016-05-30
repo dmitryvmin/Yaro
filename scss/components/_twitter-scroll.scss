@@ -1,22 +1,55 @@
-// clean up this partial....
+// Twitter Scroller
+
+.tweets-mask {
+    height: 30px;
+    max-width: 66em; 
+    position: relative; 
+
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    &:before {
+        //margin-left: -30px;
+        border-left: 30px solid transparent;
+        border-top: 30px solid $color-brand-blue;
+        left: 0;
+    }  
+
+    // &:after {
+    //     width: 30px; 
+    //     height: 30px; 
+    //     right: 0; 
+    // }
+}
+
+.tweets-oveflow {
+    overflow: hidden;
+}
+
+.tweets-margin {
+    margin-right: -30px; 
+    margin-left: 30px; 
+}
 
 #latest-tweets {
     background: $color-brand-blue;
-    //border: 1px solid #eaeaea;
-    padding: 5px 15px;
     font-size: 14px;
-    overflow: hidden;
     color: white;
-    //font-family: 'Open Sans', sans-serif;
+    height: 30px;
+    // position: relative; 
+    // margin-left: 30px;  
+
+    .tweet img {
+        display: none;
+    }
 
     a {
-        color: $color-brand-yellow;
         text-decoration: inherit;
-        font-style: italic;
-
-        &:hover {
-            color: darken($color-brand-yellow, 20%);
-        }
+        font-weight: 700; 
     }
 
     .fa-twitter {
@@ -27,7 +60,7 @@
     }
 
     ul {
-        margin: 0;
+        margin: 4px 0 0;
         padding: 0;
         list-style: none;
         white-space: nowrap;
@@ -50,13 +83,9 @@
 
             p {
                 margin: 0;
-                font-family: 'Open Sans', sans-serif;
+                font-family: 'Lekton', sans-serif;
                 font-weight: 300;
                 -webkit-font-smoothing: antialiased;
-            }
-
-            .user, .timePosted, p.interact {
-                display: none;
             }
         }
     }
@@ -78,7 +107,4 @@
 @-keyframes marquee {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-100%); }
-}
-.tweet img {
-    display: none;
 }

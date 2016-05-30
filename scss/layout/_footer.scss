@@ -15,7 +15,7 @@ footer {
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
   background-image: none;
-  background-image: url(../img/bg/footer.jpg);
+  //background-image: url(../img/bg/footer.jpg);
 
   &.ftclear {
   @include media($desktop-max) {
@@ -62,6 +62,7 @@ footer {
 
   ul {
       margin-bottom: $base-spacing * 2;
+      font-family: 'Lekton';
       @include media($mobile) {
         @include span-columns(4);
         // @include omega-reset(3n);
@@ -80,6 +81,7 @@ footer {
       list-style: none;
       text-align: left;
       margin-bottom: 10px;
+      text-transform: lowercase; 
 
       // @include media($medium-screen) {
       //   text-align: left;
@@ -102,9 +104,11 @@ footer {
 
       h3 {
         color: $footer-color;
-        font-size: 1em;
-        font-weight: 800;
+        font-size: 1.5rem;
+        //font-weight: 800;
         margin-bottom: 0.4em;
+        font-family: Mandator;
+        text-decoration: underline; 
       }
     }
   }

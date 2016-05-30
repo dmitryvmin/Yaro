@@ -160,3 +160,37 @@ form.contactForm .btn {
     width: 150px !important;
     margin-top: 1em;
 }
+
+.arrow-btn {
+    //width: 400px;
+    height: 80px;
+    background: $color-brand-yellow;
+    position: relative; 
+    text-align: center;
+    display: inline-block;
+    float: left; 
+    margin-left: 80px;
+    font-family: Lekton;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-right: 4rem;
+    padding-left: 20px;
+
+    &:hover {
+        box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out
+    }
+
+    &:before {
+        position: absolute; 
+        content: '';
+        display: block;
+        margin-left: 10px;
+        margin-top: 13px;
+        border-top: 80px solid $color-brand-yellow;
+        border-left: 80px solid transparent;
+        margin-left: -100px; 
+        margin-top: 0;
+    }
+}

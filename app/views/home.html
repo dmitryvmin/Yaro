@@ -1,92 +1,95 @@
 <!-- home.html -->
 
-<!-- TODO: remove inlince CSS; create a service that changes header background if state is home -->
-<style>
-    @media screen and (min-width: 53.75em) {
-        header.navigation {
-            background-color: transparent !important;
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(0,0,0,0.5)), color-stop(100%,rgba(255,255,255,0)));
-            background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(255,255,255,0) 100%);
-            background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(255,255,255,0) 100%);
-            background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(255,255,255,0) 100%);
-            background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(255,255,255,0) 100%);
-        }
-    }
-</style>
-
-<!-- Background Video -->
-<!-- YouTube stream -->
-<!-- <videobg></videobg> --><!-- TODO: create youtubebackground directive -->
-<!-- <div class="video-background" id="ytvid"></div> -->
-
-<!-- mobile fallback -->
-<!-- <div class="gif-background" back-img="vid/optimized/oba-video-min.gif"></div> -->
-
 <div class="home-intro">
-    <div class="mesh">
-        <header class="home-header">
-            <p>welcome to</p>
-            <h1>Obafemi Martins</h1>
-            <p>official website</p>
-        </header>
-    </div>
+    <!-- <p class="transparent-circle"></p> -->
+    <!-- <div class="mesh"></div> -->
+        <div class="home-welcome-mssg">
+            <p>The Official Website of</p>
+            <h1>Joshua Yaro</h1>
+        </div>
 </div>
 
 <!-- Meet Oba -->
 
 <div in-view="initSlider()" slick-slider-home="{{obaSliderHome}}" class="home-page-slider" id="home-page-slider">
 <!-- <div rn-carousel class="home-page-slider" id="home-page-slider"> -->
-    <div class="slide1" back-img="img/home/slideshow/oba-1-desat-min.jpg">
-        <div class="info">
-            <p>{{ 'HOME_slide1_1' | translate }}</p>
-            <p>{{ 'HOME_slide1_2' | translate }}</p>
-            <p>{{ 'HOME_slide1_3' | translate }}</p>
-            <div ng-click="linkMe('meet')" class="button-base button-flip">
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
+    <div class="slide1" back-img="img/assets/temp.jpg">
+        <section>
+            <div class="info">
+                <p>At vero eos et accusamus et iusto odio</p>
             </div>
-        </div>
+            <div class="arrow-btn">
+                <p>meet Josh Yaro</p>
+            </div>      
+        </section>
         <!-- <div class="overlay"></div> -->
     </div>
-    <div class="slide2" back-img="img/home/slideshow/oba-2-desat-min.jpg">
-        <div class="info">
-            <p>{{ 'HOME_slide1_1' | translate }}</p>
-            <p>{{ 'HOME_slide1_2' | translate }}</p>
-            <p>{{ 'HOME_slide1_3' | translate }}</p>
-            <div ng-click="linkMe('meet')" class="button-base button-flip">
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
+    <div class="slide2" back-img="img/assets/temp.jpg">
+        <section>
+            <div class="info">
+                <p>At vero eos et accusamus et iusto odio</p>
             </div>
-        </div>
-        <!-- <div class="overlay"></div> -->
-    </div>
-    <div class="slide3" back-img="img/home/slideshow/oba-3-desat-min.jpg">
-        <div class="info">
-            <p>{{ 'HOME_slide1_1' | translate }}</p>
-            <p>{{ 'HOME_slide1_2' | translate }}</p>
-            <p>{{ 'HOME_slide1_3' | translate }}</p>
-            <div ng-click="linkMe('meet')" class="button-base button-flip">
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
-                <div class="dark">{{ 'BTN_meetOba' | translate }}</div>
-            </div>
-        </div>
-        <!-- <div class="overlay"></div> -->
+            <div class="arrow-btn">
+                <p>meet Josh Yaro</p>
+            </div>      
+        </section>
     </div>
 </div>
 
 <!-- Gear -->
-<div class="home-news">
+<div class="home-shop home-section">
     <section class="om-animation" in-view="iv=true" ng-class="{'animated fadeInUp' : iv}">
         <div class="header">
             <h2>{{ 'HEADER_gear' | translate }}</h2>
             <!-- <i class="fa fa-angle-down"></i> -->
-            <img src="img/oba-down.svg">
+           <!--  <img src="img/oba-down.svg"> -->
         </div>
     </section>
 
+
+
     <section class="om-animation" in-view="iv2=true" ng-class="{'animated fadeInUp' : iv2}">
 
-        <div class="cards">
+    <div class="product-container">
+        <div class="product-item">
+            <img ng-src="img/assets/shop-product.png">
+            
+            <div class="product-description">
+                <div class="rectangle">
+                    <p>Yaro Jacket</p>
+                    <p><strong>Buy</strong></p>
+                </div>  
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="product-item">
+            <img ng-src="img/assets/shop-product.png">
+            
+            <div class="product-description">
+                <div class="rectangle">
+                    <p>Yaro Jacket</p>
+                    <p><strong>Buy</strong></p>
+                </div>  
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="product-item">
+            <img ng-src="img/assets/shop-product.png">
+            
+            <div class="product-description">
+                <div class="rectangle">
+                    <p>Yaro Jacket</p>
+                    <p><strong>Buy</strong></p>
+                </div>  
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="arrow-btn">
+        <p>shop all gear</p>
+    </div>    
+       <!--  <div class="cards">
           <div class="card">
             <div ng-click="linkMe('gear')" ng-click="linkMe('gear')" class="card-flip-container">
                 <div class="card-image">
@@ -94,225 +97,59 @@
                 </div>
                 <div class="card-caption">
                     <h3>ObaFlip sweatshirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
                 </div>
             </div>
           </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[1]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>ObaFlip shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[2]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>ObaFlip shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[3]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>ObaFlip shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[4]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Keep Calm shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[5]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Keep Calm shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[6]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Keep Calm sweatshirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[7]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Keep Calm shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[8]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM Jersey</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[9]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM Jersey</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[10]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM Jersey</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[11]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Oba Shout shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[12]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>Oba Shout sweatshirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[13]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM9 Logo shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[14]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM9 Logo shirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <div ng-click="linkMe('gear')" class="card-flip-container">
-                <div class="card-image">
-                  <img ng-src="{{merchImg[15]}}" alt="">
-                </div>
-                <div class="card-caption">
-                    <h3>OM9 Logo sweatshirt</h3>
-                    <!-- <span>Short Description</span> -->
-                    <!-- <a ui-sref="gear">Shop Gear</a> -->
-                </div>
-            </div>
-          </div>
-        </div>
+        </div>-->
     </section>
 
-    <div ng-click="linkMe('gear')" class="button-base button-flip">
+    <!-- <div ng-click="linkMe('gear')" class="button-base button-flip">
         <div class="light">{{ 'BTN_viewGear' | translate }}</div>
         <div class="light">{{ 'BTN_viewGear' | translate }}</div>
-    </div>
+    </div> -->
 </div>
 
 <div class="home-quote">
     <section>
-    <p>{{ 'HOME_quote' | translate }}</p>
+    <!-- <p>{{ 'HOME_quote' | translate }}</p> -->
+    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt."</p>
     </section>
 </div>
 
 <!-- News -->
-<div class="home-news">
+<div class="home-news home-section">
     <section class="om-animation" in-view="iv3=true" ng-class="{'animated fadeInUp' : iv3}">
         <div class="header">
             <h2>{{ 'HEADER_news' | translate }}</h2>
             <!-- <i class="fa fa-angle-down"></i> -->
-            <img src="img/oba-down.svg">
+           <!--  <img src="img/oba-down.svg"> -->
         </div>
     </section>
 
     <section class="om-animation" in-view="iv4=true" ng-class="{'animated fadeInUp' : iv4}">
 
-        <div class="cards">
+    <div class="news-square-container">
+        <div class="news-square">
+            <div class="date-triangle"></div>
+            <div class="info-triangle"></div>
+
+        </div>
+        <div class="news-square">
+            <div class="date-triangle"></div>
+            <div class="info-triangle"></div>
+        </div>
+        <div class="news-square">
+            <div class="date-triangle"></div>
+            <div class="info-triangle"></div>
+        </div>
+        <div class="news-square">
+            <div class="date-triangle"></div>
+            <div class="info-triangle"></div>
+        </div>
+    </div>
+
+        <!-- <div class="cards">
 
             <div ng-click="linkMe('http://www.seattletimes.com/sports/sounders/first-impressions-fc-dallas-defeats-sounders-in-penalty-kick-shootout/')" class="card">
                 <div class="card-border-container">
@@ -369,56 +206,52 @@
                         <p>{{news[3].content}}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
     </section>
 
-    <div ng-click="linkMe('news')" class="button-base button-flip">
+<!--     <div ng-click="linkMe('news')" class="button-base button-flip">
         <div class="light">{{ 'BTN_viewNews' | translate }}</div>
         <div class="light">{{ 'BTN_viewNews' | translate }}</div>
-    </div>
+    </div> -->
 
 </div>
 
 <!-- Interact -->
 
-<div class="home-interact">
+<div class="home-interact home-section">
     <div class="shadow"></div>
     <section>
         <div class="header-white">
-            <h2>{{ 'HOME_interact' | translate }}</h2>
+            <h2>Interact</h2>
             <!-- <i class="fa fa-angle-down"></i> -->
-            <img src="img/oba-down-w.svg">
+            <!-- <img src="img/oba-down-w.svg"> -->
         </div>
     </section>
 
-    <div id="oba-instagram"></div>
+    <!-- <div id="oba-instagram"></div> -->
 
-    <div ng-click="linkMe('interact')" class="button-base button-flip">
+<!--     <div ng-click="linkMe('interact')" class="button-base button-flip">
         <div class="dark">{{ 'BTN_interact' | translate }}</div>
         <div class="dark">{{ 'BTN_interact' | translate }}</div>
     </div>
-    <div class="sm-shadow"></div>
+    <div class="sm-shadow"></div> -->
 </div>
 
 <!-- Contact  -->
 
-<div class="hero home-contact">
+<!-- <div class="hero home-contact home-section">
     <section class="om-animation" in-view="iv5=true" ng-class="{'animated fadeInUp' : iv5}">
         <div class="header">
             <h2>{{ 'HEADER_contact' | translate }}</h2>
-            <!-- <i class="fa fa-angle-down"></i> -->
+            <i class="fa fa-angle-down"></i> 
             <img src="img/oba-down.svg">
         </div>
-    </section>
-    <section class="om-animation" in-view="iv6=true" ng-class="{'animated fadeInUp' : iv6}">
+    </section> -->
+   <!--  <section class="om-animation" in-view="iv6=true" ng-class="{'animated fadeInUp' : iv6}">
         <div class="social-icons">
-<!--             <div class="social-icon">
-                <h4>Facebook</h4>
-                <i class="fa fa-facebook-official"></i>
-            </div> -->
             <div class="social-icon">
                 <h4>Twitter</h4>
                 <a href="https://twitter.com/obafemimartins" target="_blank"><i class="fa fa-twitter-square"></i></a>
@@ -432,8 +265,8 @@
                 <a href ng-click="toggleContact()"><i class="fa fa-envelope"></i></a>
             </div>
         </div>
-    </section>
-</div>
+    </section> -->
+<!-- </div> -->
 
 <script>
     $(document).ready(function() {

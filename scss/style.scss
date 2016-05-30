@@ -33,9 +33,7 @@
 
 @import "core/global";
 
-// backgrounds, borders, box-shadow, etc
-// is there any use or this partial?....
-// @import "core/skin";
+@import "core/skin";
 
 // images include svgs, icons, etc.
 @import "core/images";
@@ -47,7 +45,7 @@
 //@import "layout/header";
 @import "layout/banner";
 @import "layout/footer";
-@import "layout/navigation";
+@import "layout/header";
 
 // - - - - - - - - - - - - - - - - - - -
 // - - components

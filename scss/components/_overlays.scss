@@ -3,16 +3,16 @@
 $image-mesh-overlay: url("../img/theme/mesh.png");
 
 .mesh {
-    @include media($mobile-max) {
-        height: 494px;
-    }
-    position: absolute;
+    // @include media($mobile-max) {
+    //     height: 494px;
+    // }
+    //position: absolute;
     width: 100%;
-    height: 694px;
+    height: 700px;
     background: $image-mesh-overlay;
     // background-size: 4px 5px;
     z-index: 199;
-    margin-top: -94px;
+    margin-top: -30px;
 }
 
 .curtain {

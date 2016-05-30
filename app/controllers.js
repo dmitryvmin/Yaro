@@ -32,9 +32,9 @@ angular.module('obaApp')
     $scope.config = {
         preload: 'none'
     ,   sources: [
-            {src: $sce.trustAsResourceUrl('http://obafemimartins9.com/vid/optimized/oba-video.mp4'), type: 'video/mp4'}
-        ,   {src: $sce.trustAsResourceUrl('http://obafemimartins9.com/vid/optimized/oba-video.webm'), type: 'video/webm'}
-        ,   {src: $sce.trustAsResourceUrl('http://obafemimartins9.com/vid/optimized/oba-video.ogv'), type: 'video/ogv'}
+            {src: $sce.trustAsResourceUrl('vid/temp-bg-vid.mp4'), type: 'video/mp4'}
+        // ,   {src: $sce.trustAsResourceUrl('http://obafemimartins9.com/vid/optimized/oba-video.webm'), type: 'video/webm'}
+        // ,   {src: $sce.trustAsResourceUrl('http://obafemimartins9.com/vid/optimized/oba-video.ogv'), type: 'video/ogv'}
         ]
     ,   autoPlay: true
     ,   loop: true

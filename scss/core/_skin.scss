@@ -1,3 +1,47 @@
 // - - - - - - - - - - - - - - - - - - -
 // - - skin
 // global skin styles - gradients, colors, box-shadows, etc.
+
+
+.dec-line {
+    position: absolute;
+    height: 25px;
+    left: 0;
+    top: 0;
+    width: 85px;
+    margin-left: -110px;
+    text-align: left;
+    margin-right: 0;
+    font-size: 14px;
+    color: white; 
+    font-family: Lekton;
+    margin-top: 30px;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        width: 150px;
+        right: 0;
+        height: 1px;
+        background-color: #dcdcdc;
+        top: 8px;
+        margin-right: -118px;
+        opacity: 0.5;  
+    }
+}
+
+.transparent-circle {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    height: 20rem;
+    width: 20rem;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    position: absolute;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    right: 8rem;
+    top: 12rem;
+    opacity: 0.3;
+}

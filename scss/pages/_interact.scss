@@ -94,7 +94,12 @@ section.interact-container {
   width: 100%;
   @include media($desktop) {
     //width: percentage(3/4);
-    width: percentage(2/3);
+    //width: percentage(2/3);
+    width: 100%;
+  }
+
+  img {
+    display: none; 
   }
 
   ul {
@@ -125,6 +130,7 @@ section.interact-container {
       margin: 0;
       height: 300px !important;
       @include transition-1(all, 0.5s);
+      background-size: cover;
 
 
       // @include media($mobile) {

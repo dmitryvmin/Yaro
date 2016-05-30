@@ -30,9 +30,13 @@
 // - - variables
 
 // - - colors
-$color-brand-blue: #253B4C;
-$color-brand-yellow: #C9DD72;
-$color-brand-green: #7fcc4a;
+$color-brand-blue: #4f91cd;
+$color-brand-yellow: #f8d26f;
+
+
+$color-brand-green: $color-brand-yellow;
+
+
 
 // Social
 $color-scroll-twitter: #55acee;

@@ -87,9 +87,9 @@ angular.module('obaApp', [
 
 .config(function($translateProvider) {
   $translateProvider.translations('en', {
-    HEDAER_home: 'Home',
-    HEADER_meet: 'Meet Oba',
-    HEADER_gear: 'Oba Gear',
+    HEADER_home: 'Home',
+    HEADER_meet: 'About',
+    HEADER_gear: 'Shop',
     HEADER_news: 'News',
     HEADER_interact: 'Interact',
     HEADER_contact: 'Contact',
@@ -132,7 +132,7 @@ angular.module('obaApp', [
 
     FOOTER_links: 'Links',
     FOOTER_newsletter: 'newsletter',
-    FOOTER_newsletter_text: 'Be the first to know everything about Obafemi Martins.',
+    FOOTER_newsletter_text: 'Be the first to know everything about Josh Yaro.',
     FOOTER_youremail: 'Your email',
     FOOTER_email: 'Email',
 

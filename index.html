@@ -37,16 +37,11 @@
             <vg-media vg-src="config.sources"></vg-media>
         </videogular>
 
-        <!-- Twitter feed ticker -->
-        <div ui-if="twitter-json-ready">
-            <div tweets="tweets" class="tweets" id="latest-tweets"></div>
-        </div>
-
         <!-- Navigation -->
         <header class="navigation" role="banner" ng-cloak>
             <div class="navigation-wrapper">
                 <a ng-class="{'active':$state.includes('home')}" ng-click="collapseMenu()" ui-sref="home" class="logo">
-                    <img src="img/logo/oba-logo-white-small.png" alt="Logo Image">
+                    <img src="img/assets/JY-logo-mono.png" alt="Logo Image">
                 </a>
                 <a ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="navigation-menu-button"><img src="img/theme/menu-hamburger.svg"></a>
                 <nav role="navigation">
@@ -55,20 +50,30 @@
                         <li ui-sref-active="active" ng-click="collapseMenu()" class="nav-link"><a ui-sref="gear">{{ 'HEADER_gear' | translate }}</a></li>
                         <li ui-sref-active="active" ng-click="collapseMenu()" class="nav-link"><a ui-sref="news">{{ 'HEADER_news' | translate }}</a></li>
                         <li ui-sref-active="active" ng-click="collapseMenu()" class="nav-link"><a ui-sref="interact">{{ 'HEADER_interact' | translate }}</a></li>
-                        <li ui-sref-active="active" ng-click="collapseMenu()" class="nav-link"><a ng-click="toggleContact()" href>{{ 'HEADER_contact' | translate }}</a></li>
-                        <button class="language-btn-ch" ng-click="changeLanguage('ch')" translate=""></button>
-                        <button class="language-btn-en" ng-click="changeLanguage('en')" translate=""></button>
+                        <!-- <li ui-sref-active="active" ng-click="collapseMenu()" class="nav-link"><a ng-click="toggleContact()" href>{{ 'HEADER_contact' | translate }}</a></li> -->
+<!--                         <button class="language-btn-ch" ng-click="changeLanguage('ch')" translate=""></button>
+                        <button class="language-btn-en" ng-click="changeLanguage('en')" translate=""></button> -->
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <section>
+            <div class="tweets-mask">
+                <div class="tweets-margin">
+                    <div class="tweets-oveflow" ui-if="twitter-json-ready">
+                        <div tweets="tweets" class="tweets" id="latest-tweets"></div>
+                    </div>
+                </div> 
+            </div>    
+        </section>
+
         <!-- Fixed social media links -->
-        <ul class="sidebar-social-links">
+<!--         <ul class="sidebar-social-links">
             <li><a class="sidebar-social-instagram" href="https://instagram.com/obagoal/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a class="sidebar-social-twitter" href="https://twitter.com/obafemimartins" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li><a class="sidebar-social-email" href ng-click="toggleContact()"><i class="fa fa-envelope"></i></a></li>
-        </ul>
+        </ul> -->
 
         <!-- Contact -->
         <div ng-controller="contactController" ng-show="contactVisible">
@@ -124,19 +129,7 @@
         <script src="app/controllers.js"></script>
 
         <script>
-        // TODO: create a derective for the twitter fetcher
         $(document).ready(function() {
-
-            // var LatestTweets = {
-            //     init: function () {
-            //         twitterFetcher.fetch({
-            //             id: '589594498209959937',
-            //             domId: 'latest-tweets',
-            //             showImages: false
-            //         });
-            //     }
-            // };
-            // LatestTweets.init();
 
             // smooth scrolling hack for IE
             // TODO: create angular service
